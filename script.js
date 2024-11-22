@@ -391,8 +391,17 @@ function takecmd(message) {
         speak("Opening Spotify")
     }
     else if (message.includes("open whatsapp")) {
-        window.open("https://web.whatsapp.com/", "_blank")
-        speak("Opening WhatsApp")
+        speak("Opening WhatsApp");
+        window.location.href = "whatsapp://"
+        setTimeout(() => {
+            window.open("https://web.whatsapp.com/", "_blank")
+        }, 1000)
+    }
+
+    else if (message.includes("open your command list") || message.includes("open command list") || message.includes("command list")) {
+        console.log("Command detected: Opening command list")
+        speak("opening Command list")
+        window.open("./cmd.html", "_blank")
     }
 
     else if (message.includes("open telegram")) {
