@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aquamarine;
+}
+
+#logo {
+    width: 25vw;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    animation: blink-shadow 1s infinite;
+}
+
+@keyframes blink-shadow {
+
+    0%,
+    100% {
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+    }
+
+    50% {
+        filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.5));
+    }
+}
+
+h1 {
+    color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+.name {
+    color: aquamarine;
+    font-size: 70px;
+    text-shadow: 0px 0px 10px rgb(12, 114, 114), 0px 0px 20px rgb(58, 177, 177), 0px 0px 40px cyan, 0px 0px 80px cyan;
+}
+
+.va {
+    color: purple;
+    font-size: 55px;
+    text-shadow: 0 0 10px magenta, 0 0 20px cyan, 0 0 30px white;
+}
+
+#btn {
+    width: 28%;
+    height: 6%;
+    border-radius: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(30deg, rgb(1, 133, 133), purple);
+    box-shadow: 0 0 15px rgb(1, 133, 133), 0 0 15px purple;
+    transition: all 0.5s;
+}
+
+#btn:hover {
+    box-shadow: 0 0 25px rgb(1, 133, 133), 0 0 25px purple;
+    letter-spacing: 1px;
+}
+.hlp{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #ff4b5c, #8e44ad);
+    box-shadow: 0 0 15px rgba(255, 75, 92, 0.8), 0 0 15px rgba(142, 68, 173, 0.8);
+    animation: glowPulse 2s infinite;
+    position: fixed;
+    bottom: 10px;
+    right: 90px;
+
+}
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 75, 92, 0.8), 0 0 10px rgba(142, 68, 173, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 75, 92, 1), 0 0 20px rgba(142, 68, 173, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 75, 92, 0.8), 0 0 10px rgba(142, 68, 173, 0.8);
+    }
+}
+
+.hlp:hover {
+    background: linear-gradient(to right, #8e44ad, #ff4b5c);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 40vw;
+    }
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .va {
+        font-size: 40px;
+    }
+
+    #btn {
+        width: 80%;
+        height: 8%;
+        font-size: 18px;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 50vw;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .va {
+        font-size: 30px;
+    }
+
+    #btn {
+        width: 90%;
+        font-size: 16px;
+    }
+}

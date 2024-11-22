@@ -1,0 +1,122 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #121212;
+            color: #00ff00;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+            margin: 10px 0;
+            color: #00FFFF;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #DC143C;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 5px;
+            margin: 0;
+            font-size: 13px;
+            color: #33ff33;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .box {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            border: 2px solid #00ff00;
+        }
+
+        .box div {
+            flex: 1;
+            padding: 10px;
+            border-right: 2px solid #00ff00;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box div:last-child {
+            border-right: none;
+        }
+
+        h2,
+        h3,
+        ul {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            flex-grow: 1;
+            overflow: hidden;
+            padding-right: 10px;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .box div {
+                border-right: none;
+                width: 100%;
+                padding: 10px;
+            }
+
+            h2,
+            h3 {
+                font-size: 14px;
+            }
+
+            ul {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex-direction: column;
+            }
+
+            .box div {
+                border-right: none;
+                width: 100%;
+                padding: 15px;
+            }
+
+            h2,
+            h3 {
+                font-size: 16px;
+            }
+
+            ul {
+                font-size: 13px;
+            }
+        }
