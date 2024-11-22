@@ -365,7 +365,8 @@ function takecmd(message) {
         speak("Opening JioCinema")
         window.open("https://www.jiocinema.com", "_blank")
     }
-    else if (message.includes("open amazon prime") || message.includes("amazon prime")) {
+    else if (message.includes("open amazon prime") || message.includes("amazon prime") 
+        || message.includes("prime video") || message.includes("prime videos")) {
         speak("Opening Amazon Prime Video")
         window.open("https://www.primevideo.com", "_blank")
     }
