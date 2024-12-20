@@ -137,6 +137,9 @@ function takecmd(message) {
     else if (message.includes("about yourself")) {
         speak("I’m your virtual assistant, designed to help you with any task, answer questions, or just have a chat!");
     }
+        else if (message.includes("ram ram")) {
+        speak("Jai shree ram sir");
+    }
     else if (message.includes("something interesting") || message.includes("anything interesting")) {
         speak("Did you know that honey never spoils? Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old!");
     }
