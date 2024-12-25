@@ -144,20 +144,6 @@ function takecmd(message) {
         speak("Did you know that honey never spoils? Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old!");
     }
 
-
-    //heath tips
-    else if (message.includes("better sleep")) {
-        speak("Maintain a regular sleep schedule, avoid caffeine before bedtime, and create a comfortable, dark sleeping environment.");
-    }
-    else if (message.includes("remedy for cough")) {
-        speak("For a cough, try honey in warm water, ginger tea, or use a humidifier to ease symptoms.");
-    }
-    else if (message.includes("how to boost immunity")) {
-        speak("Boost your immunity by eating fruits and vegetables, exercising regularly, and getting enough sleep.");
-    }
-
-
-
     //favourite color, food, movie and some rceipe like or ask what should i eat.
 
 
