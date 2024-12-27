@@ -338,7 +338,7 @@ function takecmd(message) {
             "Why did the math book look sad? It had too many problems.",
             "Why couldn’t the bicycle stand up by itself? It was two-tired.",
             "What do you call fake spaghetti? An impasta!",
-            "Why don’t eggs tell jokes? They’d crack each other up!",
+            "Why don’t eggs tell jokes? They’d crack each other up!"
         ]
         let randomJoke = jokes[Math.floor(Math.random() * jokes.length)]
         speak(randomJoke)
