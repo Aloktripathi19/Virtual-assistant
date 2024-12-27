@@ -372,16 +372,6 @@ function takecmd(message) {
         }
     }
 
-    else if (message.includes("open history")) {
-        window.open("chrome://history", "_blank");
-        speak("Opening History");
-    }
-    else if (message.includes("open chrome extensions")) {
-        window.open("chrome://extensions", "_blank");
-        speak("Opening Chrome Extensions");
-    }
-    
-
     else if (message.includes("compose email") || message.includes("send email") || message.includes("send mail")) {
         window.open("mailto:someone@example.com?subject=Hello&body=How%20are%20you?", "_self")
         speak("Opening Mail to compose an email")
