@@ -199,14 +199,6 @@ function takecmd(message) {
         speak("For muscle pain, gently stretch the muscles, apply heat or ice, and ensure you’re resting the affected area.");
     }
 
-
-
-        
-
-    
-
-
-
     
     //favourite color, food, movie and some rceipe like or ask what should i eat.
         
@@ -362,15 +354,27 @@ function takecmd(message) {
     }
 
 
+    //open new tab
+       else if (message.includes("switch to tab")) {
+            chrome.tabs.query({currentWindow: true}, function(tabs) {
+                let currentTabIndex = tabs.findIndex(tab => tab.active)
+                let nextTabIndex = (currentTabIndex + 1) % tabs.length
+                chrome.tabs.update(tabs[nextTabIndex].id, {active: true})
+                speak("Switching to the next tab.")
+            })
+        }    
+
+
+
+
+
+        
+    // open apps
+        
     else if (message.includes("open apple store")) {
         window.open("https://www.apple.com/store", "_blank")
         speak("Opening Apple Store")
     }
-
-
-
-    // open apps 
-
     else if (message.includes("open game") || message.includes("open a game") || message.includes("open games")) {
         let game = Math.random() < 0.5 ? "rock_paper" : "multiplication";
         
