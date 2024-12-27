@@ -353,21 +353,6 @@ function takecmd(message) {
         speak(randomQuote)
     }
 
-
-    //open new tab
-       else if (message.includes("switch to tab")) {
-            chrome.tabs.query({currentWindow: true}, function(tabs) {
-                let currentTabIndex = tabs.findIndex(tab => tab.active)
-                let nextTabIndex = (currentTabIndex + 1) % tabs.length
-                chrome.tabs.update(tabs[nextTabIndex].id, {active: true})
-                speak("Switching to the next tab.")
-            })
-        }    
-
-
-
-
-
         
     // open apps
         
@@ -385,6 +370,15 @@ function takecmd(message) {
             window.open("https://aloktripathi19.github.io/basic_multiplication_game/", "_blank");
             speak("Opening Basic Multiplication game");
         }
+    }
+
+    else if (message.includes("open history")) {
+        window.open("chrome://history", "_blank");
+        speak("Opening History");
+    }
+    else if (message.includes("open chrome extensions")) {
+        window.open("chrome://extensions", "_blank");
+        speak("Opening Chrome Extensions");
     }
     
 
