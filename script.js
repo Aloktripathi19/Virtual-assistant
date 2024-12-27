@@ -144,9 +144,65 @@ function takecmd(message) {
         speak("Did you know that honey never spoils? Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old!");
     }
 
+
+
+
+    //about health tips
+        
+    else if (message.includes("health tips")) {
+    let healthTips = [
+        "Drink plenty of water to stay hydrated and support your body's functions.",
+        "Eat a balanced diet rich in fruits, vegetables, whole grains, and lean proteins.",
+        "Get at least 7-8 hours of sleep each night to recharge your body and mind.",
+        "Exercise regularly, even a 30-minute walk daily can improve your overall health.",
+        "Take short breaks from screens to reduce eye strain and improve focus.",
+        "Practice mindfulness or meditation to reduce stress and improve mental clarity.",
+        "Avoid skipping breakfast; it’s an essential meal to kickstart your metabolism.",
+        "Incorporate healthy fats like avocados, nuts, and seeds into your diet.",
+        "Limit your intake of processed and sugary foods to maintain stable energy levels."
+    ]
+    let random = healthTips[Math.floor(Math.random() * healthTips.length)]
+    speak(random)
+    }
+
+    else if (message.includes("remedy for headache") || message.includes("headache remedy")) {
+        speak("For a headache, try drinking water, resting in a dark room, or gently massaging your temples. If it persists, consult a doctor.")
+    }
+    else if (message.includes("cold remedy") || message.includes("remedy for cold") || message.includes("common cold")) {
+        speak("For a cold, stay warm, drink plenty of fluids, and try inhaling steam or having ginger tea to relieve symptoms.")
+    }
+    else if (message.includes("stress relief tips") || message.includes("tips for stress relief")) {
+        speak("Take deep breaths, practice meditation, listen to soothing music, or go for a walk in nature to relieve stress.")
+    }
+    else if (message.includes("remedy for sore throat") || message.includes("sore throat remedy")) {
+        speak("Gargle with warm salt water, drink honey and lemon tea, or try lozenges for relief from a sore throat.")
+    }
+    else if (message.includes("how to boost immunity") || message.includes("boost immunity tips") || message.includes("how to improve immunity")) {
+        speak("Boost your immunity by eating fruits and vegetables, exercising regularly, and getting enough sleep.")
+    }
+    else if (message.includes("remedy for indigestion") || message.includes("indigestion remedy")) {
+        speak("For indigestion, sip on warm water, avoid heavy meals, or try ginger tea for relief.")
+    }
+    else if (message.includes("eye strain remedy") || message.includes("remedy for eye strain")) {
+        speak("Rest your eyes by following the 20-20-20 rule: look at something 20 feet away for 20 seconds every 20 minutes.")
+    }
+    else if (message.includes("tips for better sleep") || message.includes("how to sleep better") || message.includes("tips for good sleep")) {
+        speak("Maintain a regular sleep schedule, avoid caffeine before bedtime, and create a comfortable, dark sleeping environment.")
+    }
+    else if (message.includes("remedy for cough") || message.includes("cough remedy")) {
+        speak("For a cough, try honey in warm water, ginger tea, or use a humidifier to ease symptoms.")
+    }
+
+
+        
+
+    
+
+
+
+    
     //favourite color, food, movie and some rceipe like or ask what should i eat.
-
-
+        
     else if (message.includes("favourite colour") || message.includes("favourite colour")) {
         speak("I don't have a favorite color, but I think all colors are beautiful in their own way.")
     }
