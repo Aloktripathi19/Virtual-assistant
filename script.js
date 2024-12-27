@@ -192,6 +192,13 @@ function takecmd(message) {
     else if (message.includes("remedy for cough") || message.includes("cough remedy")) {
         speak("For a cough, try honey in warm water, ginger tea, or use a humidifier to ease symptoms.")
     }
+    else if (message.includes("stomach ache") || message.includes("remedy for stomach ache")) {
+        speak("For a stomach ache, try drinking peppermint tea, using a warm compress, or resting in a comfortable position.");
+    }
+    else if (message.includes("muscle pain") || message.includes("remedy for muscle pain")) {
+        speak("For muscle pain, gently stretch the muscles, apply heat or ice, and ensure you’re resting the affected area.");
+    }
+
 
 
         
