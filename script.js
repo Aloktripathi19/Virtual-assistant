@@ -358,7 +358,7 @@ function takecmd(message) {
     //open game
     else if (message.includes("open game") || message.includes("open a game") || message.includes("open games")) {
         let gameOptions = ["rock_paper", "multiplication", "tic_tac_toe"];
-    l    et game = gameOptions[Math.floor(Math.random() * gameOptions.length)];
+    let game = gameOptions[Math.floor(Math.random() * gameOptions.length)];
     
         if (game == "rock_paper") {
             window.open("https://aloktripathi19.github.io/Rock_Paper_Scissor/", "_blank");
