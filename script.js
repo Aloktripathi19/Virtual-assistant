@@ -353,6 +353,26 @@ function takecmd(message) {
         speak(randomQuote)
     }
 
+
+
+    //open game
+    else if (message.includes("open game") || message.includes("open a game") || message.includes("open games")) {
+        let gameOptions = ["rock_paper", "multiplication", "tic_tac_toe"];
+    l    et game = gameOptions[Math.floor(Math.random() * gameOptions.length)];
+    
+        if (game == "rock_paper") {
+            window.open("https://aloktripathi19.github.io/Rock_Paper_Scissor/", "_blank");
+            speak("Opening Rock Paper Scissors game");
+        } else if (game == "multiplication") {
+            window.open("https://aloktripathi19.github.io/basic_multiplication_game/", "_blank");
+            speak("Opening Basic Multiplication game");
+        } else {
+            window.open("https://aloktripathi19.github.io/Tic-Tac-Toe/", "_blank");
+            speak("Opening Tic Tac Toe game");
+        }
+    }
+
+
         
     // open apps
         
