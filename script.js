@@ -360,18 +360,6 @@ function takecmd(message) {
         window.open("https://www.apple.com/store", "_blank")
         speak("Opening Apple Store")
     }
-    else if (message.includes("open game") || message.includes("open a game") || message.includes("open games")) {
-        let game = Math.random() < 0.5 ? "rock_paper" : "multiplication";
-        
-        if (game == "rock_paper") {
-            window.open("https://aloktripathi19.github.io/Rock_Paper_Scissor/", "_blank");
-            speak("Opening Rock Paper Scissors game");
-        } else {
-            window.open("https://aloktripathi19.github.io/basic_multiplication_game/", "_blank");
-            speak("Opening Basic Multiplication game");
-        }
-    }
-
     else if (message.includes("compose email") || message.includes("send email") || message.includes("send mail")) {
         window.open("mailto:someone@example.com?subject=Hello&body=How%20are%20you?", "_self")
         speak("Opening Mail to compose an email")
