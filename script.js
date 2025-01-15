@@ -364,7 +364,7 @@ function takecmd(message) {
             window.open("https://aloktripathi19.github.io/Rock_Paper_Scissor/", "_blank");
             speak("Opening Rock Paper Scissors game");
         } else if (game == "multiplication") {
-            window.open("https://aloktripathi19.github.io/basic_multiplication_game/", "_blank");
+            window.open("https://aloktripathi19.github.io/Basic_multiplication_game/", "_blank");
             speak("Opening Basic Multiplication game");
         } else {
             window.open("https://aloktripathi19.github.io/Tic-Tac-Toe/", "_blank");
