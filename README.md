@@ -31,8 +31,6 @@ A fun and lightweight virtual assistant built with JavaScript that interacts wit
   - `"what is 2 + 2?"`, `"what is 10/2?"`, `"what is 3 power 2?"`
   - Supports basic arithmetic and exponentiation
 
-> ⚠️ Uses `eval()` for expression parsing – ensure safety before production use.
-
 ---
 
 ### 🎮 Game Launcher
