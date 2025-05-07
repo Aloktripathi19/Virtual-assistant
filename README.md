@@ -1,4 +1,4 @@
-# 🤖 Virtual Assistant Web App
+# 🤖 Virtual Assistant Web App.
 
 A fun and lightweight virtual assistant built with JavaScript that interacts with users through voice commands and offers a variety of features ranging from motivational support to basic utilities and health tips.
 
