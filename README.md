@@ -6,7 +6,7 @@ A fun and lightweight virtual assistant built with JavaScript that interacts wit
 
 ## ✨ Features
 
-### 🗣️ Conversational Capabilities
+### 🗣️ Conversational Capabilities.
 - **Emotional Support**
   - Responds to phrases like:
     - `"I love you"`, `"I miss you"`, `"what is love?"`, `"what is life?"`
